@@ -35,7 +35,7 @@ void main() {
 //    SWAP NUMBERS
     int[] swapResult = BuildLogic.swapNumber(10, 20);
     ;System.out.println("\n\n");
-    System.out.println("swapped number: " + Arrays.toString(swapResult));
+//    System.out.println("swapped number: " + Arrays.toString(swapResult));
 
 
 
