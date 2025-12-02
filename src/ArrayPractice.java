@@ -6,14 +6,16 @@ import static java.util.Collections.reverse;
 public class ArrayPractice {
 
 
-
     public static void main(String[] args) {
 //        System.out.println(3%5);
         int[] arrayMax = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         int[] arrayRotate = {1, 2, 3, 4, 5, 6, 7};
 //        System.out.println(maxSubArray(arrayMax));
-            System.out.println(Arrays.toString(rotateArray(arrayRotate, 3)));
+//            System.out.println(Arrays.toString(rotateArray(arrayRotate, 3)));
 //            System.out.println(Arrays.toString(arrayRotate));
+//        threeD();
+        print2DArrays();
+
 
 
 
@@ -107,23 +109,6 @@ subArrays with the largest sum.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public  static void moveZerosSwap(int[] array){
             int nextNonZero = 0;
             for (int i = 0; i < array.length; i++){
@@ -154,6 +139,38 @@ subArrays with the largest sum.
             return true;
     }
 
+    public static void threeD (){
+            int value = 0;
+        int[][][] nums = new int[2][2][3];
+        for(int i = 0; i < 2; i++){
+            for (int j = 0; j < 2; j++ ){
+                for (int k = 0; k < 3; k++){
+                    nums[i][j][k] = value++;
+                    System.out.println(nums[i][j][k]);
+                }
+            }
+
+    }
+
+    }
+
+
+
+
+        public static void print2DArrays() {
+            int[][] arr = {
+                    {1, 2, 3},
+                    {4, 5, 6},
+                    {7, 8, 9}
+            };
+
+            for (int i = 0; i < arr.length; i++) {          // rows
+                for (int j = 0; j < arr[i].length; j++) {   // columns
+                    System.out.print(arr[i][j] + " ");
+                }
+                System.out.println(); // new line after each row
+            }
+        }
 
 
 
